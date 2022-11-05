@@ -1,14 +1,16 @@
-import { createStore } from 'vuex'
+import {createStore} from 'vuex'
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    state: {
+        percent: 0
+    },
+    getters: {},
+    mutations: {
+        setPercent(state, percent) {
+            console.log('receive new percent: ' + percent)
+            state.percent = percent
+        }
+    },
+    actions: {},
+    modules: {}
 })
